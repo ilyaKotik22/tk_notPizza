@@ -1,0 +1,36 @@
+.header{
+  background-color: var(--entity-color-deep-body);
+  width:  calc(100% - 7vw);
+  margin: var(--page-margin);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--entity-border-radius);
+
+  .header__half{
+    gap: 25px;
+    padding: 0 25px;
+    display: flex;
+    input{
+      content: 'asdssa';
+      color: var(--text-color);
+      border: none;
+      background-color: #1c1c1c;
+      border-radius: var(--entity-border-radius);
+      height: 30px;
+      width: 33vw;
+    }
+    input:focus{
+      outline: none;
+      border: 2px solid var(--entity-color-used);
+    }
+    .header__navItem{
+        cursor: pointer;
+    }
+    .header__navItem:hover{
+      color: var(--entity-color-used);
+    }
+  }
+}
