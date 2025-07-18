@@ -2,14 +2,14 @@
     --body-color: #333333;
     --text-color: #ffffff;
 
-    --entity-color-body: #2b2b2b;
+    --entity-color-body: #232323;
     --entity-color-used: #cf6c00;
     --entity-color-used-hover: #aa5800;
     --entity-color-body-alternative: #232323;
     --entity-color-deep-body: #232323;
 
     --entity-border-radius: 10px;
-    --page-margin: 0 7vw 0 7vw;
+    --page-margin: 0 3vw;
 
     --z-index-entity: 100;
     --z-index-fixed: 200;
@@ -35,4 +35,7 @@ button{
 }
 button:hover{
     background-color: var(--entity-color-used-hover);
+}
+.container{
+    padding: var(--page-margin);
 }

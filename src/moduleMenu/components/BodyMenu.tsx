@@ -7,6 +7,6 @@ interface Props{
 export const BodyMenu: React.FC<Props> = ({ ClassName }) => {
     return (
         <div className={ ClassName}>
-
+            
         </div>);
 };
