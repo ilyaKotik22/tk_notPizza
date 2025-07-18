@@ -1,0 +1,38 @@
+:root{
+    --body-color: #333333;
+    --text-color: #ffffff;
+
+    --entity-color-body: #2b2b2b;
+    --entity-color-used: #cf6c00;
+    --entity-color-used-hover: #aa5800;
+    --entity-color-body-alternative: #232323;
+    --entity-color-deep-body: #232323;
+
+    --entity-border-radius: 10px;
+    --page-margin: 0 7vw 0 7vw;
+
+    --z-index-entity: 100;
+    --z-index-fixed: 200;
+    --z-index-modalWindow: 400;
+
+}
+body{
+    position: relative;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+button{
+    color: white;
+    border-radius: var(--entity-border-radius);
+    border: none;
+    background-color: var(--entity-color-used);
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--entity-color-used-hover);
+}
