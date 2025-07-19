@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--entity-color-deep-body);
+  background-color: var(--entity-color-body);
   width: calc(100% - 7vw);
   margin: var(--page-margin);
   height: 60px;

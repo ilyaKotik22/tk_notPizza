@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.Filter {
+  margin-left: 3vw;
+  padding: 15px 20px;
+  width: 20vw;
+  height: 500px;
+  background-color: var(--entity-color-body);
+  border-radius: var(--entity-border-radius);
+}
+
+.Slider {
+  /* Ползунок */
+  /* Для Firefox */
+}
+.Slider input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--entity-color-deep-body);
+  outline: none;
+}
+.Slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--entity-color-used);
+  cursor: pointer;
+}
+.Slider input[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--entity-color-used);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Filter.css.map */
