@@ -2,6 +2,7 @@ import React from "react";
 import {Filter} from "./FIlter.tsx";
 import {Slider} from "./Slider.tsx";
 import './FIlter.tsx'
+import '../styles/Filter.css'
 interface Props{
     ClassName?: string
 }

@@ -5,9 +5,12 @@
   height: 500px;
   background-color: var(--entity-color-body);
   border-radius: var(--entity-border-radius);
+
+
 }
 .Slider{
 
+  margin-top: 25px;
   input[type="range"] {
     -webkit-appearance: none;
     width: 100%;

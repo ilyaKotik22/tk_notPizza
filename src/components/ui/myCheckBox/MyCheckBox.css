@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.myCheckbox {
+  margin-top: 15px;
+  -webkit-user-select: none; /* Для Safari и старых версий Chrome */
+  -moz-user-select: none; /* Для Firefox */
+  -ms-user-select: none; /* Для IE/Edge */
+  user-select: none;
+  display: flex;
+  cursor: pointer;
+  width: max-content;
+  align-items: center;
+}
+.myCheckbox span {
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--entity-color-deep-body);
+}
+.myCheckbox input:checked + span {
+  background-color: var(--entity-color-used);
+}
+.myCheckbox input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.myCheckbox:hover {
+  color: var(--entity-color-used);
+}
+
+/*# sourceMappingURL=MyCheckBox.css.map */
