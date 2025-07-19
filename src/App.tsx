@@ -1,4 +1,4 @@
-import './App.css'
+import '../../rtk2/src/App.css'
 import AppRouter from "./AppRouter.tsx";
 
 function App() {
