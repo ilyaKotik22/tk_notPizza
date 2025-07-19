@@ -6,7 +6,7 @@
     --entity-color-used: #cf6c00;
     --entity-color-used-hover: #aa5800;
     --entity-color-body-alternative: #232323;
-    --entity-color-deep-body: #232323;
+    --entity-color-deep-body: #1b1b1b;
 
     --entity-border-radius: 10px;
     --page-margin: 0 3vw;
@@ -28,13 +28,14 @@ body{
 }
 button{
     color: white;
-    border-radius: var(--entity-border-radius);
-    border: none;
-    background-color: var(--entity-color-used);
+    padding: 5px 15px;
+    border: 2px solid var(--entity-color-used);
+    background-color: var(--entity-color-body);
     cursor: pointer;
+    transition: 200ms;
 }
 button:hover{
-    background-color: var(--entity-color-used-hover);
+    background-color: var(--entity-color-used);
 }
 .container{
     padding: var(--page-margin);
