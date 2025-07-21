@@ -1,4 +1,6 @@
-export const itemss =[
+const db = require('../db')
+
+const items =[
     {
         id: 1,
         name: "Футболка классическая",
@@ -135,3 +137,70 @@ export const itemss =[
         material: "кожа"
     }
 ]
+const User ={
+    name: '',
+    password:'',
+    status:''
+}
+const basket = []
+class userController{
+    async getItems(req,res){
+        res.send({items: items})
+    }
+    async getUser(req,res){
+        res.send({User: User})
+    }
+    putInUser(req,res){
+        User.name = req.body.name
+        User.password = req.body.password
+        User.status = req.body.status
+
+    }
+
+     putInBasket(req,res){
+        console.log(req.body)
+
+
+        if (!basket.length){
+            basket.push(req.body)
+        }else {
+            let i = 0
+            for (const reqKey in basket) {
+                if (basket[reqKey].id === req.body.id){
+                    i+=1
+                    basket[reqKey].count+=1
+                }
+            }
+            if (i===0){
+                basket.push(req.body)
+            }
+        }
+
+         res.json({ success: true });
+    }
+    async crementBasket(req,res){
+        const action = req.body.action
+        const id = req.body.id
+
+        for (const idKey in basket) {
+            if (basket[idKey].id === id){
+                if (action === '+'){
+                    basket[idKey].count +=1
+                }else {
+                    basket[idKey].count -=1
+                }
+            }
+        }
+        res.json({ success: true });
+    }
+    async getBasket(req,res){
+        let finalBasket
+        finalBasket = basket.filter(el=> el.count>0)
+        res.send(finalBasket)
+    }
+    getData(req,res){
+
+        res.send(data)
+    }
+}
+module.exports = new userController()

@@ -5,8 +5,9 @@ import {Header} from "./components/shape/header/Header.tsx";
 
 const AppRouter = () => {
     return (
-        <>
+        <div>
             <Header ClassName={'header'}/>
+            <br/><br/><br/><br/><br/>
             <Routes>
                 {publicRouts.map((el)=>{
                     return (
@@ -15,7 +16,7 @@ const AppRouter = () => {
                 })}
 
             </Routes>
-        </>
+        </div>
 
     );
 };

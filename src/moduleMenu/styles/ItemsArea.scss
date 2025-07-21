@@ -1,0 +1,26 @@
+.ItemsArea{
+  width: 65vw;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  height: max-content;
+
+  a{
+    color: inherit;
+    text-decoration: none;
+    width: max-content;
+    height: max-content;
+  }
+  .Item{
+
+    padding: 10px 15px;
+    width: 290px;
+    height: 110px;
+    background-color: var(--entity-color-body);
+    transition: 200ms;
+  }
+  .Item:hover{
+    background-color: var(--entity-color-used);
+  }
+}
