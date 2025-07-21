@@ -13,6 +13,7 @@ interface Props{
 export const Item: React.FC<Props> = ({ClassName,name,price,id}) => {
     return (
         <a href={`/item/${id}`}>
+            <br/>
             <div className={ClassName}>
                 <b>{name}</b>
                 <div className="">{price}</div>
