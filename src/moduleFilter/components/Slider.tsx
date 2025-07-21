@@ -34,7 +34,7 @@ export const Slider: React.FC<Props> = ({ ClassName,slider }) => {
         <div className={ ClassName}>
             <div className="panel">
                 <div className="">{sliderSelector}р</div>
-                <div className="">12000рр</div>
+                <div className="">12000ррh</div>
             </div>
             <input  type="range"
                     min={slider.size.min}
