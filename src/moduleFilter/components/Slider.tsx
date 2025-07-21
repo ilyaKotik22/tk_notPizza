@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
 import type {FilterSlider} from "../store/types.ts";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {addInSlider, createSlider} from "../store/FilterReducer.ts";
+import type {RootState} from "../../store/store.ts";
 
 
 interface Props{
@@ -11,6 +12,7 @@ interface Props{
 
 export const Slider: React.FC<Props> = ({ ClassName,slider }) => {
     const dipatch = useDispatch()
+    const sliderSelector = useSelector((state:RootState)=> state.filter.sliders[slider.name].name)
     function debunce(func: (el: string) => void, time: number) {
         let SetTime:number;
         return function (el:string){
@@ -24,19 +26,23 @@ export const Slider: React.FC<Props> = ({ ClassName,slider }) => {
     useEffect(() => {
         dipatch(createSlider({name: slider.name, size: slider.size, value:slider.value}))
     }, []);
-
+    
     function deb(el:string){
         dipatch(addInSlider({name: slider.name, value:Number(el)}))
     }
     return (
-        <div className={ ClassName}>
-            <input  type="range"
-                    min={slider.size.min}
-                    max={slider.size.max}
+        <div className={ClassName}>
+            <div className="panel">
+                <div className="">{sliderSelector}р</div>
+                <div className="">12000hр</div>
+            </div>
+            <input type="range"
+                   min={slider.size.min}
+                   max={slider.size.max}
 
-                    onChange={(ev)=>{
-                        debauncee(ev.target.value)
-                    }}
-                    />
+                   onChange={(ev) => {
+                       debauncee(ev.target.value)
+                   }}
+            />
         </div>);
 };
