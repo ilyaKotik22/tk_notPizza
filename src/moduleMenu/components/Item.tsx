@@ -15,7 +15,7 @@ export const Item: React.FC<Props> = ({ClassName,name,price,id}) => {
         <a href={`/item/${id}`}>
             <br/>
             <div className={ClassName}>
-                <b>{name}</b>
+                <b>{name}!</b>
                 <div className="">{price}</div>
             </div>
         </a>
