@@ -12,7 +12,7 @@ interface Props{
 
 export const Slider: React.FC<Props> = ({ ClassName,slider }) => {
     const dipatch = useDispatch()
-    const sliderSelector = useSelector((state:RootState)=> state.filter.sliders[slider.name]?.name)
+    const sliderSelector = useSelector((state:RootState)=> state.filter.sliders[slider.name]?.value)
     function debunce(func: (el: string) => void, time: number) {
         let SetTime:number;
         return function (el:string){
