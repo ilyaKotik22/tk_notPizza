@@ -13,17 +13,17 @@ export const FilterBody: React.FC<Props> = ({ ClassName }) => {
             <Filter
                     name={'FilterFirst'}
                     header={'пол'}
-                    options={['sadad','fdasqw','qwreq']}
-                    defaultOption={'sadad'}
+                    options={['все пола','unisex','female','male']}
+                    defaultOption={'все пола'}
             />
             <Filter
                 name={'FilterSecond'}
                 header={'материал'}
-                options={['sadad','fdasqw','qwreq']}
-                defaultOption={'sadad'}
+                options={['все материалы','хлопок','кожа','вискоза', 'шерсть','полиэстер']}
+                defaultOption={'все материалы'}
             />
 
             <Slider ClassName={'Slider'} slider={{name: 'sliderFirst',size:{min:0,max:12000},value: 5000}}/>
-            <button>hgfd</button>
+
         </div>);
 };
