@@ -9,8 +9,12 @@
 
 }
 .Slider{
-
   margin-top: 25px;
+
+  .panel{
+    display: flex;
+    justify-content: space-between;
+  }
   input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
