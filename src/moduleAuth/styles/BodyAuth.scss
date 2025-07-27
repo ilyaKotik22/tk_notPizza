@@ -1,0 +1,38 @@
+.BodyAuth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bodyForm{
+    gap: 25px;
+    display: flex;
+    width: 60vw;
+    height: max-content;
+    background-color: var(--entity-color-body);
+    padding: 15px 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .modButt{
+      width: 50vw !important;
+      display: flex;
+      justify-content: space-between;
+    }
+    .bodyForm__pole{
+      width: max-content;
+
+      div{
+        margin-bottom: 25px;
+      }
+      button{
+
+      }
+      input{
+        border: none;
+        background-color: var(--entity-color-deep-body);
+        width: 50vw;
+        height: 35px;
+      }
+    }
+  }
+}

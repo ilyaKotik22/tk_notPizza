@@ -19,6 +19,7 @@ export const fetchDataMenu = createAsyncThunk<PostMenu, void, { rejectValue: str
     }
 )
 
+
 export const menuReducer = createSlice({
     name: 'menu',
     initialState,
@@ -34,6 +35,7 @@ export const menuReducer = createSlice({
                 state.error = null
             })
             .addCase(fetchDataMenu.fulfilled, (state, action: PayloadAction<PostMenu>) => {
+                console.log('as')
                 state.loading = false;
                 state.data = action.payload;
             })
