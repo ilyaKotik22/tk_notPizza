@@ -151,7 +151,8 @@ class userController{
         res.send({User: User})
     }
     putInUser(req,res){
-        User.name = req.body.name
+        console.log(req.body)
+        User.name = req.body.login
         User.password = req.body.password
         User.status = req.body.status
 
